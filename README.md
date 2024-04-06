@@ -1,15 +1,26 @@
 
-# Starter Config
-
-if suggestions don't work, first make sure
-you have TypeScript LSP working in your editor
-
-if you do not want typechecking only suggestions
-
-```json
-// tsconfig.json
-"checkJs": false
+# Minimal configuration for nix is 
+```nix
+# this is home manager module
+# gtk.nix
+{ pkgs, ... }:
+{
+  gtk = {
+    enable = true;
+    theme = {
+      name = "adw-gtk3-dark";
+      package = pkgs.adw-gtk3;
+    };
+    iconTheme = {
+      name = "Adwaita";
+      package = pkgs.gnome.adwaita-icon-theme;
+    };
+  };
+}
 ```
 
-types are symlinked to:
-/home/ciflire/.local/share/com.github.Aylur.ags/types
+```nix
+# You need those lines for power management and tray icons
+services.upower.enable = true;
+services.gvfs.enable = true;
+```
