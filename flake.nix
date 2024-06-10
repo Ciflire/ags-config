@@ -20,6 +20,10 @@
             packages = with pkgs; [
               vscode-langservers-extracted
               nodePackages_latest.typescript-language-server
+
+              gtksourceview
+              webkitgtk
+              accountsservice
             ];
             shellHook = "";
           };

@@ -11,7 +11,7 @@ layout {
 
 	tab name="reload" {
 		pane command="bash" {
-			args "reload_ags.sh"
+			args "scripts/reload_ags.sh"
 		}
 	}
 
