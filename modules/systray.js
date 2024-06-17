@@ -2,7 +2,7 @@ import SystemTray from 'resource:///com/github/Aylur/ags/service/systemtray.js';
 
 /** @param {import('types/service/systemtray').TrayItem} item */
 const SysTrayItem = item => Widget.Button({
-  css: 'min-height: 25px' ,
+  class_name: "sys-tray-button",
   cursor: "pointer",
   child: Widget.Icon().bind('icon', item, 'icon'),
   tooltipMarkup: item.bind('tooltip_markup'),
@@ -11,5 +11,6 @@ const SysTrayItem = item => Widget.Button({
 });
 
 export const sysTray = Widget.Box({
+  class_name: "sys-tray-widget",
   children: SystemTray.bind('items').as(i => i.map(SysTrayItem))
 })

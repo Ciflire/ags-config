@@ -21,6 +21,8 @@
               vscode-langservers-extracted
               nodePackages_latest.typescript-language-server
 
+              nodejs
+
               gtksourceview
               webkitgtk
               accountsservice

@@ -1,0 +1,195 @@
+/* Top bar styling */
+
+.top-bar {}
+
+.top-bar-center-widgets {
+  background-color: @window_bg_color;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Monolisa";
+}
+
+.ws-box {
+  background-color: @window_bg_color;
+  border-radius: 10px;
+  padding: 2px
+}
+
+.ws-button:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.ws-button:last-child {
+  border-radius: 0px 10px 10px 0px
+}
+
+.ws-button {
+  font-size: 15px;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 2px;
+}
+
+.ws-active {
+  background-color: @accent_bg_color;
+  color: @accent_fg_color
+}
+
+
+.ws-indicator {
+  background-color: transparent;
+}
+
+.sys-status {
+  background-color: @window_bg_color;
+  padding: 0 10px;
+  border-radius: 10px
+}
+
+.sys-tray-button {
+  background-color: transparent;
+}
+
+.sys-tray-widget {
+  background-color: @window_bg_color;
+  border-radius: 10px
+}
+
+
+.focused-window {
+  font-family: "Monolisa";
+  margin: 0 0 0 50px;
+  padding: 0 10px;
+  border-radius: 10px;
+  color: @dialog_fg_color
+}
+
+
+.circular-battery-widget {
+  min-width: 25px;
+  min-height: 25px;
+  font-size: 2px;
+  margin: 0px;
+  background-color: #131313;
+  color: @green_1;
+}
+
+.circular-audio-widget {
+  min-width: 25px;
+  min-height: 25px;
+  font-size: 2px;
+  margin: 0px;
+  background-color: #131313;
+  color: @blue_1;
+}
+
+.circular-backlight-widget {
+  min-width: 25px;
+  min-height: 25px;
+  font-size: 2px;
+  margin: 0px;
+  background-color: @window_bg_color;
+  color: @yellow_1;
+}
+
+/* Notification Popup styling */
+
+window.notification-popups box.notifications {
+  padding: .5em;
+}
+
+.icon {
+  min-width: 68px;
+  min-height: 68px;
+  margin-right: 1em;
+}
+
+.icon image {
+  font-size: 58px;
+  /* to center the icon */
+  margin: 5px;
+  color: @theme_fg_color;
+}
+
+.icon box {
+  min-width: 68px;
+  min-height: 68px;
+  border-radius: 7px;
+}
+
+.notification {
+  min-width: 350px;
+  border-radius: 0px;
+  padding: 1em;
+  margin: .5em;
+  border: 1px solid @wm_borders_edge;
+  background-color: @theme_bg_color;
+}
+
+.notification.critical {
+  border: 1px solid lightcoral;
+}
+
+.title {
+  color: @theme_fg_color;
+  font-size: 1.4em;
+}
+
+.body {
+  color: @theme_unfocused_fg_color;
+}
+
+.actions .action-button {
+  margin: 0 .4em;
+  margin-top: .8em;
+}
+
+.actions .action-button:first-child {
+  margin-left: 0;
+}
+
+.actions .action-button:last-child {
+  margin-right: 0;
+}
+
+
+window.bar {
+  background-color: @theme_bg_color;
+  color: @theme_fg_color;
+}
+
+button {
+  min-width: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+
+button:active {
+  background-color: @theme_selected_bg_color;
+}
+
+button:hover {
+  border-bottom: 3px solid @theme_fg_color;
+}
+
+label {
+  font-weight: bold;
+}
+
+.workspaces button.focused {
+  border-bottom: 3px solid @theme_selected_bg_color;
+}
+
+.client-title {
+  color: @theme_selected_bg_color;
+}
+
+.notification {
+  color: yellow;
+}
+
+levelbar block,
+highlight {
+  min-height: 10px;
+}
